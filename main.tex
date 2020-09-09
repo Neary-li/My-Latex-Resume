@@ -1,0 +1,107 @@
+\documentclass[10pt,a4paper]{altacv}
+
+
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+\usepackage[pdfborder={0 0 0}]{hyperref}
+\usepackage{CTEX}
+
+\definecolor{VividPurple}{HTML}{AA1645}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\addbibresource{publications.bib}
+
+\begin{document}
+%\name{Alexandru Boboc}
+\name{\heiti 李志}
+\tagline{\heiti 前端开发工程师 \&  软件开发工程师}
+\photo{2.5cm}{me}
+
+\personalinfo{
+% Add your own with \printinfo{symbol}{detail}
+  \email{\href{mailto:neary_li@163.com}{neary\_li@163.com}}
+  \phone{15595188378}
+% \mailaddress{1230 East Alexander Ave, Merced, CA 95340}
+  \location{宁夏\   银川}
+  \homepage{\href{https://neary-li.github.io/}{Blog}}%  \twitter{\href{https://twitter.com/lxbbc}{@lxbbc}}
+% \linkedin{linkedin.com/in/alexboboc}
+ \github{\href{https://github.com/Neary-li}{Neary-li}}
+}
+
+\begin{adjustwidth}{}{-8cm}
+\makecvheader
+\end{adjustwidth}
+
+\cvsection[sidebar] {工作经历}
+
+\cvevent{\heiti 开发工作}{\href{}{会计分类分录账系统}}{June 2019 -- November 2019}{北方民族大学}
+\begin{itemize}
+	\item 本项目是利用\textbf{JavaScript}语言为\textbf{Excel}开发的一款用于会计快速分类和分录账的插件,使用\textbf{Node.js}作为该项目的服务器。
+	\item  在开发过程中我主要负的是该插件的前端UI界面，自动创建分录和分类账的各项模板表，以及表中的自动核算功能。
+\end{itemize}
+
+\divider
+
+\cvevent{}{\href{https://github.com/Neary-li/MyContacts}{哆讯}}{November 2018 -- May 2019}{北方民族大学}
+\begin{itemize}
+	\item \textbf{软件全称：基于用户多模态信息的多功能管理系统}\  原型是一种运行在Android上的多功能通讯录，除了拥有原生通讯录的基本功能外，还支持用户多模态信息的采集，如声音信息、指纹信息、视频动画等。
+	\item  在开发过程中我主要负责该项目的\textbf{前端UI设计}以及\textbf{各业务之间的逻辑关系}。
+%	\item Architected production \textbf{AWS resources (S3, EC2, Lambda, API Gateway, Redshift, etc)} to support the activities of the company globally.
+%	\item Scripted deployments with \textbf{Terraform}, operated orchestration clusters using \textbf{Nomad}, and migrated legacy workflows to the cloud.
+%	\item Built and maintained all the \textbf{backend resources} (DB, API, etc) necessary for supporting the iOS app developed by the company.
+%	\item Built numerous internal tools (including \textbf{MacOS and web apps}), and trained staff and enterprise clients to use them.
+%	\item Developed \textbf{complex Python automation workflows} for SolidWorks, Blender, etc, saving significant amounts of man-time.
+\end{itemize}
+%\begin{itemize}
+%	\item \textbf{Lead all DevOps and backend efforts} throughout the company, including cloud infrastructure, automation workflows and application backend development.
+%	\item Architected production \textbf{AWS resources (S3, EC2, Lambda, API Gateway, Redshift, etc)} to support the activities of the company globally.
+%	\item Scripted deployments with \textbf{Terraform}, operated orchestration clusters using \textbf{Nomad}, and migrated legacy workflows to the cloud.
+%	\item Built and maintained all the \textbf{backend resources} (DB, API, etc) necessary for supporting the iOS app developed by the company.
+%	\item Built numerous internal tools (including \textbf{MacOS and web apps}), and trained staff and enterprise clients to use them.
+%	\item Developed \textbf{complex Python automation workflows} for SolidWorks, Blender, etc, saving significant amounts of man-time.
+%\end{itemize}
+
+\divider
+
+
+
+\cvevent{\heiti 学术工作}{\href{}{HTML5、CSS3高阶应用}}{October 2019 -- December 2019}{北方民族大学}
+\begin{itemize}
+	\item 协助老师完成教学书籍的出版——《HTML5、CSS3高级应用》。
+	\item 在此过程中我负责\textbf{Audio和Video API}、\textbf{WebSocket API}和\textbf{构建离线应用}这三部分，并分别完成了相关实验。
+\end{itemize}
+
+\divider
+
+\cvevent{}{\href{}{网络安全实验}}{May 2018 -- June 2018}{北方民族大学}
+\begin{itemize}
+	\item 协助老师完成网络安全相关书籍的出版。
+	\item 在此过程中我主要负责\textbf{Nessus系统漏洞扫描}、\textbf{手机Wi-Fi数据嗅探}和\textbf{Wi-Fi中间人攻击与防范}，并分别完成了相关实验。
+\end{itemize}
+
+\cvsection{奖励}
+
+\begin{itemize}
+
+	\item 2018年获得研究生一年级学业一等奖学金。
+	\item 2019年获得研究生二年级学业一等奖学金。
+	\item 2019年8月获得软件著作权——基于用户多模态信息的多功能管理系统。
+	\item 2020年1月获得软件著作权——基于Excel的会计分类分录账系统。
+\end{itemize}
+
+\nocite{*}
+
+\printbibliography[heading=pubtype,title={\printinfo{\faBook}{Dissertations}},type=book]
+
+\end{document}
+
